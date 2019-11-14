@@ -1,0 +1,11 @@
+
+heapSort : constructHeap.o displayHeap.o heapSort.o main2.o
+	gcc constructHeap.o displayHeap.o main2.o heapSort.o -o heapSort -lm
+
+heapSort.o : heap.h
+
+main2.o : heap.h
+
+consturctHeap.o : heap.h
+
+displayHeap.o : heap.h
